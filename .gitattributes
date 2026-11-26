@@ -1,0 +1,11 @@
+# Normalise line endings to LF everywhere: the package runs on Linux inside
+# Smithery/MCPize containers, and mixed endings break shell entry points.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary

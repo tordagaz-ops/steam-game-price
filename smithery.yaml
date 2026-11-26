@@ -1,0 +1,39 @@
+# Smithery configuration
+# Docs: https://smithery.ai/docs/build/project-config
+#
+# `runtime: python` lets Smithery build and host this server from the repo
+# directly: it reads pyproject.toml and installs the package, then runs the
+# start command below. No Docker image or external host required.
+
+name: steam-game-price
+version: "0.1.0"
+description: >-
+  Live Steam Store prices: search games by title, read the current price and
+  discount in any store region, and list what is on sale right now. No API key.
+
+runtime: "python"
+
+startCommand:
+  type: "stdio"
+  configSchema:
+    type: "object"
+    required: []
+    additionalProperties: false
+    properties:
+      locale:
+        type: "string"
+        title: "Language"
+        description: >-
+          Language for tool descriptions, titles and error messages.
+          English is the default.
+        enum: ["en", "es", "ru"]
+        default: "en"
+  commandFunction: |-
+    (config) => ({
+      command: "python",
+      args: ["-m", "mcp_steam_price"],
+      env: {
+        MCP_LOCALE: config.locale || "en",
+        MCP_TRANSPORT: "stdio"
+      }
+    })
