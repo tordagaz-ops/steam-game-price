@@ -341,6 +341,20 @@ envoltorio independiente.
 Los precios cambian constantemente y se ofrecen «tal cual»; verifícalos antes de
 comprar. No es asesoramiento financiero.
 
+## Gratis, y se agradecen las donaciones
+
+Este servidor es gratuito: todas las herramientas se pueden llamar sin pago, sin
+registro y sin clave de API. Si te ahorra tiempo o dinero, puedes enviar una
+donación -- llega directamente al desarrollador, sin plataforma de por medio.
+
+| Red | Activo | Dirección |
+| --- | --- | --- |
+| Base | USDC / ETH | `0x832e9e0FC60c35A07cf80846A9eD27aa7cb4F637` |
+| Ethereum | ETH | `0x832e9e0FC60c35A07cf80846A9eD27aa7cb4F637` |
+
+Nada en el código depende de las donaciones: sin telemetría, sin comprobación de
+licencia, sin demo que caduque. Todo el código está bajo licencia MIT.
+
 ## Licencia
 
 MIT — ver [LICENSE](LICENSE).

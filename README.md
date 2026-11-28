@@ -330,6 +330,20 @@ endorsed or certified by Valve. This project is an independent wrapper.
 Prices change constantly and are provided as-is; verify before buying. This is
 not financial advice.
 
+## Free, and donations welcome
+
+This server is free: every tool can be called without payment, registration or
+an API key. If it saves you time or money, you can send a donation -- it goes
+straight to the developer, with no platform in between.
+
+| Network | Asset | Address |
+| --- | --- | --- |
+| Base | USDC / ETH | `0x832e9e0FC60c35A07cf80846A9eD27aa7cb4F637` |
+| Ethereum | ETH | `0x832e9e0FC60c35A07cf80846A9eD27aa7cb4F637` |
+
+Nothing in the code is gated on donations: no telemetry, no licence check, no
+expiring demo. The whole source is MIT-licensed.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
